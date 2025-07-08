@@ -10,7 +10,7 @@ export const useGetBobotCriteria = () => {
     return useQuery({
         queryKey: ["bobot"],
         queryFn: async () => {
-            const AxiosRest = await Axios.get<ResponseBobot[]>('http://localhost:3000/perhitungan/bobot', {
+            const AxiosRest = await Axios.get<ResponseBobot[]>('https://spkbe-production.up.railway.app//perhitungan/bobot', {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                 },

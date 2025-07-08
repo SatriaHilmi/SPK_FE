@@ -4,7 +4,7 @@ import Axios from 'axios'
 export const useCriteriaMutation = () => {
   return useMutation({
     mutationFn: async (id: string) => {
-      const AxiosRest = await Axios.delete(`http://localhost:3000/kriteria/${id}`, {
+      const AxiosRest = await Axios.delete(`https://spkbe-production.up.railway.app//kriteria/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

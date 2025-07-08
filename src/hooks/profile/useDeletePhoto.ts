@@ -4,7 +4,7 @@ import Axios from "axios";
 export const useDeletePhoto = () => {
     return useMutation({
         mutationFn: async () => {
-            const res = await Axios.delete(`http://localhost:3000/profil`, {
+            const res = await Axios.delete(`https://spkbe-production.up.railway.app//profil`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },
@@ -13,7 +13,7 @@ export const useDeletePhoto = () => {
         }
     });
     // const deletePhoto = async (photo: string) => {
-    //     const res = await Axios.delete(`http://localhost:3000/profil`, {
+    //     const res = await Axios.delete(`https://spkbe-production.up.railway.app//profil`, {
     //         headers: {
     //             Authorization: `Bearer ${localStorage.getItem("token")}`,
     //         },

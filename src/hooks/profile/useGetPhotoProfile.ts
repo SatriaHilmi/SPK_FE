@@ -16,7 +16,7 @@ export const useGetPhotoProfile = () => {
     return useQuery({
         queryKey: ['profile-data'],
         queryFn: async () => {
-            const res = await Axios.get<ResponseProfile>(`http://localhost:3000/profil`, {
+            const res = await Axios.get<ResponseProfile>(`https://spkbe-production.up.railway.app//profil`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

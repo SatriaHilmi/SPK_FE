@@ -29,7 +29,7 @@ export const useSendProfile = () => {
         //     const imageUrl = result?.url;
         //     console.log("imageUrl", imageUrl);
         //     if (!imageUrl) return
-        //     const response = await axios.post(`http://localhost:3000/profil`, {
+        //     const response = await axios.post(`https://spkbe-production.up.railway.app//profil`, {
 
         //         headers: {
         //             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -64,7 +64,7 @@ export const useSendProfile = () => {
                     if (result?.url) {
                         try {
 
-                            const axiosResponse = axios.post(`http://localhost:3000/profil`, { imageUrl: result.url }, {
+                            const axiosResponse = axios.post(`https://spkbe-production.up.railway.app//profil`, { imageUrl: result.url }, {
                                 headers: {
                                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                                     "Content-Type": "application/json",

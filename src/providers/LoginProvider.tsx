@@ -31,7 +31,7 @@ export const LoginProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 
   const me = async () => {
     try {
-      const response = await axios.get<UserDTO>('http://localhost:3000/me', {
+      const response = await axios.get<UserDTO>('https://spkbe-production.up.railway.app//me', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

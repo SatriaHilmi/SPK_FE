@@ -11,7 +11,7 @@ export const useUpdateSubCriteriaMutation = () => {
             namaId: string;
             nilai: number;
         }) => {
-            const AxiosRest = await Axios.put(`http://localhost:3000/subkriteria/${data.id}`, {
+            const AxiosRest = await Axios.put(`https://spkbe-production.up.railway.app//subkriteria/${data.id}`, {
                 alternatif: data.alternatif,
                 codeId: data.codeId,
                 namaId: data.namaId,

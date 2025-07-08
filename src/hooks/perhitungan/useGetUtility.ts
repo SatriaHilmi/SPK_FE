@@ -22,7 +22,7 @@ export const useGetUtility = () => {
     return useQuery({
         queryKey: ['nilai-utility'],
         queryFn: async () => {
-            const AxiosRest = await Axios.get<ResponseUtilityPerJenis>('http://localhost:3000/perhitungan/nilai-utility', {
+            const AxiosRest = await Axios.get<ResponseUtilityPerJenis>('https://spkbe-production.up.railway.app//perhitungan/nilai-utility', {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                 },
