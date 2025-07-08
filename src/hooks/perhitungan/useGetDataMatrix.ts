@@ -23,7 +23,7 @@ export const useGetDataMatrix = () => {
     return useQuery({
         queryKey: ["matrix"],
         queryFn: async () => {
-            const AxiosRest = await Axios.get<ResponseMatrix>('https://spkbe-production.up.railway.app//perhitungan/matrix', {
+            const AxiosRest = await Axios.get<ResponseMatrix>('https://spkbe-production.up.railway.app/perhitungan/matrix', {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                 },

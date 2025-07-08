@@ -10,7 +10,7 @@ export const useGetJenisQuery = () => {
     return useQuery({
         queryKey: ["jenis"],
         queryFn: async () => {
-            const AxiosRest = await Axios.get<Jenis[]>("https://spkbe-production.up.railway.app//jenis", {
+            const AxiosRest = await Axios.get<Jenis[]>("https://spkbe-production.up.railway.app/jenis", {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

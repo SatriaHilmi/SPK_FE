@@ -5,7 +5,7 @@ import { Jenis } from "./useGetJenisQuery";
 export const useCreateJenisMutation = () => {
     return useMutation({
         mutationFn: async (data: Jenis) => {
-            const AxiosRest = await Axios.post("https://spkbe-production.up.railway.app//jenis", data, {
+            const AxiosRest = await Axios.post("https://spkbe-production.up.railway.app/jenis", data, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

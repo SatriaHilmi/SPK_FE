@@ -24,7 +24,7 @@ export const FormRegister: React.FC<{ children?: ReactNode }> = ({
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
-      const response = await axios.post('https://spkbe-production.up.railway.app//auth/register', {
+      const response = await axios.post('https://spkbe-production.up.railway.app/auth/register', {
         username: data.username,
         password: data.password,
         email: data.email,

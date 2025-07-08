@@ -15,7 +15,7 @@ export const useGetTotal = () => {
     return useQuery({
         queryKey: ['total-nilai'],
         queryFn: async () => {
-            const res = await Axios.get<TotalNilaiResponse>('https://spkbe-production.up.railway.app//perhitungan/total-nilai', {
+            const res = await Axios.get<TotalNilaiResponse>('https://spkbe-production.up.railway.app/perhitungan/total-nilai', {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                 },

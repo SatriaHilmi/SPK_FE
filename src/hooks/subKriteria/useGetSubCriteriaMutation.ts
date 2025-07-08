@@ -15,7 +15,7 @@ export interface subCriteria {
 export const useGetSubCriteriaQuery = () => {
     return useQuery({
         queryKey: ['subkriteria'], queryFn: async () => {
-            const AxiosRest = await Axios.get<subCriteria[]>('https://spkbe-production.up.railway.app//subkriteria', {
+            const AxiosRest = await Axios.get<subCriteria[]>('https://spkbe-production.up.railway.app/subkriteria', {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                 },

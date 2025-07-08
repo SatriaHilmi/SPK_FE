@@ -18,7 +18,7 @@ export const FormLogin: React.FC<{ children: ReactNode }> = ({ children }) => {
   } = useForm<FormValues>();
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
-      const response = await axios.post('https://spkbe-production.up.railway.app//auth/login', {
+      const response = await axios.post('https://spkbe-production.up.railway.app/auth/login', {
         username: data.username,
         password: data.password,
       });
